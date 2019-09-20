@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="c.apps.machete.mastermezcla.ResultadoAvanzado">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_resultadoAvanzado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="?attr/actionBarSize"
+            android:background="@color/colorPrimary">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="55sp"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/back_button"
+                    style="@android:style/Widget.Material.ImageButton"
+                    android:layout_width="70sp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    app:srcCompat="?attr/actionModeCloseDrawable"
+                    android:foreground="?attr/selectableItemBackground"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="0dp"
+                    android:layout_marginTop="12sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10sp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/basic"
+                    android:text="@string/label_ActionBar_ResultadoAvanzado"
+                    android:textSize="25sp" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_marginTop="55dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="ScrollViewCount">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:id="@+id/linearLayout2"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_margin="5sp"
+                android:fontFamily="@font/basic"
+                android:text="@string/texto_tabla1"
+                android:textColor="#37474F"
+                android:textSize="19sp"
+                android:textStyle="italic"
+                android:focusable="true"
+                android:focusableInTouchMode="true"/>
+
+            <GridView
+                android:id="@+id/tablaResultadosAvanzado1"
+                android:layout_width="match_parent"
+                android:layout_height="291dp"
+                android:numColumns="2"
+                tools:ignore="NestedScrolling" />
+
+            <GridView
+                android:id="@+id/tablaResultadosAvanzado2"
+                android:layout_width="match_parent"
+                android:layout_height="291dp"
+                android:numColumns="2"
+                tools:ignore="NestedScrolling" />
+
+            <GridView
+                android:id="@+id/tablaResultadosAvanzado3"
+                android:layout_width="match_parent"
+                android:layout_height="291dp"
+                android:numColumns="2"
+                tools:ignore="NestedScrolling" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:layout_marginStart="5dp"
+                android:layout_margin="5sp"
+                android:fontFamily="@font/basic"
+                android:text="@string/texto_tabla4"
+                android:textColor="#37474F"
+                android:textSize="19sp"
+                android:textStyle="italic"
+                android:focusable="true"
+                android:focusableInTouchMode="true"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/nm3_TextInputLayout"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:id="@+id/nm3"
+                    android:inputType="numberDecimal"
+                    android:hint="@string/hint_nm3"
+                    android:textColorHint="@color/colorAccent">
+
+                </android.support.v7.widget.AppCompatEditText>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/calcularnm3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                app:cardBackgroundColor="#B0BEC5"
+                app:cardCornerRadius="10sp"
+                app:cardElevation="4sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginBottom="7dp"
+                        android:layout_gravity="center"
+                        android:text="@string/boton_calcular"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="20sp"
+                        android:textStyle="italic"
+                        tools:fontFamily="@font/basic" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <GridView
+                android:id="@+id/tablaResultadosAvanzado4"
+                android:layout_width="match_parent"
+                android:layout_height="291dp"
+                android:numColumns="2"
+                tools:ignore="NestedScrolling" />
+
+            <GridView
+                android:id="@+id/tablaResultadosAvanzado5"
+                android:layout_width="match_parent"
+                android:layout_height="291dp"
+                android:numColumns="2"
+                tools:ignore="NestedScrolling" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_margin="5sp"
+                android:fontFamily="@font/basic"
+                android:text="@string/texto_tabla6"
+                android:textColor="#37474F"
+                android:textSize="19sp"
+                android:textStyle="italic"
+                android:focusable="true"
+                android:focusableInTouchMode="true"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/nS_TextInputLayout"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:id="@+id/nS"
+                    android:inputType="numberDecimal"
+                    android:hint="@string/hint_sacos"
+                    android:textColorHint="@color/colorAccent">
+
+                </android.support.v7.widget.AppCompatEditText>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/calcularS"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10sp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                app:cardBackgroundColor="#B0BEC5"
+                app:cardCornerRadius="10sp"
+                app:cardElevation="4sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginBottom="7dp"
+                        android:layout_gravity="center"
+                        android:text="@string/boton_calcular"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="20sp"
+                        android:textStyle="italic"
+                        tools:fontFamily="@font/basic" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <GridView
+                android:id="@+id/tablaResultadosAvanzado6"
+                android:layout_width="match_parent"
+                android:layout_height="291dp"
+                android:numColumns="2"
+                tools:ignore="NestedScrolling" />
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/regresarDatos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:layout_margin="10dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                app:cardBackgroundColor="#B0BEC5"
+                app:cardCornerRadius="10sp"
+                app:cardElevation="4sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginBottom="7dp"
+                        android:layout_gravity="center"
+                        android:text="@string/boton_regresar"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="20sp"
+                        android:textStyle="italic"
+                        tools:fontFamily="@font/basic" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/irInicio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                app:cardBackgroundColor="#B0BEC5"
+                app:cardCornerRadius="10sp"
+                app:cardElevation="4sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginBottom="7dp"
+                        android:layout_gravity="center"
+                        android:text="@string/boton_inicio"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="20sp"
+                        android:textStyle="italic"
+                        tools:fontFamily="@font/basic" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

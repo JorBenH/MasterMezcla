@@ -1,0 +1,111 @@
+<resources>
+    <string name="app_name">Master Mezcla</string>
+
+    <!-- Titulo de la app -->
+    <string name="MasterMezcla_Logo">MasterMezcla</string>
+
+    <!--- activity_inicio -->
+    <string name="label_ActionBar_Inicio">Inicio</string>
+    <!--- Strings de los botones de inicio -->
+    <string name="boton_basico">Básico</string>
+    <string name="boton_avanzado">Avanzado</string>
+    <string name="boton_creditos">Créditos</string>
+
+    <!--- Strings de descripcion de calculo -->
+    <string name="text_basico">Cálculo básico para el proporcionamiento de la mezcla de concreto</string>
+    <string name="texto_avanzado">(Se requieren datos de laboratorio de los agregados)</string>
+
+    <!-- activity_basico -->
+    <string name="label_ActionBar_Basico">Básico</string>
+    <string name="texto_spinnerResistencia">Resistencia a la compresión [kgf/cm²]</string>
+    <string name="texto_spinnerGrava">Tamaño máximo de grava [mm]</string>
+    <string name="boton_calcular">Calcular</string>
+    <string name="boton_inicio">Inicio</string>
+    <!-- array spinner de Resistencia -->
+    <string-array name="spinner_Resistencia">
+        <item>Columnas \t\t\t\t\t\t\t\t\t\t\t\t\t 250 [kgf/cm²]</item>
+        <item>Trabes \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t 250 [kgf/cm²]</item>
+        <item>Losas \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t 200 [kgf/cm²]</item>
+        <item>Elementos de cimentación  \t 250 [kgf/cm²]</item>
+        <item>Dalas/Castillos \t\t\t\t\t\t\t\t\t 150 [kgf/cm²]</item>
+        <item>Plantillas \t\t\t\t\t\t\t\t\t\t\t\t\t\t 100 [kgf/cm²]</item>
+        <item>Firme de tráfico ligero \t\t\t\t\t 100 [kgf/cm²]</item>
+        <item>Firme de tráfico pesado \t\t\t 200 [kgf/cm²]</item>
+        <item>Muros \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t 250 [kgf/cm²]</item>
+    </string-array>
+
+    <!-- array spinner de Grava -->
+    <string-array name="spinner_Grava">
+        <item>20 \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t [mm]</item>
+        <item>40 \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t [mm]</item>
+    </string-array>
+
+    <!-- activity_datos_avanzado -->
+    <string name="label_ActionBar_DatosAvanzado">Datos del Proyecto</string>
+    <string name="texto_spinnerResistenciaAvanzado">Resistencia del Proyecto [kgf/cm²]</string>
+    <string name="hint_Revenimiento">Revenimiento [cm]</string>
+    <string name="tabla_Revenimiento">Tabla de revenimiento</string>
+    <string name="hint_DesviacionE">Desviación estandar [kgf/cm²]</string>
+    <string name="default_DesviacionEstandar">40</string>
+    <string name="hint_Densidad">Densidad [g/cm³]</string>
+    <string name="default_Densidad">3.15</string>
+    <string name="texto_Normatividad">Normatividad</string>
+    <string name="normatividad_RCDF">RCDF</string>
+    <string name="normatividad_2004">NORMA NMX-C-155-ONNCCE-2004</string>
+    <string name="normatividad_1999">NORMA NMX-C-403-ONNCCE-1999</string>
+    <string name="normatividad_ACI318">ACI-318</string>
+    <string name="texto_Calidad">Calidad</string>
+    <string name="texto_RadioButtonCalidad1">1</string>
+    <string name="texto_RadioButtonCalidad2">2</string>
+    <string name="detalles_grava">Detalles de la grava</string>
+    <string name="texto_tamañoGrava">Tamaño máximo [mm]</string>
+    <string name="hint_DensidadGrava">Densidad [g/cm³]</string>
+    <string name="hint_absorcionGrava">Absorción [%]</string>
+    <string name="hint_PVSSGrava">P.V.S.S. [kg/m³]</string>
+    <string name="hint_PVSCGrava">P.V.S.C. [kg/m³]</string>
+    <string name="hint_humedadObraGrava">Humedad en obra [%]</string>
+    <string name="detalles_arena">Detalles de la arena</string>
+    <string name="hint_DensidadArena">Densidad [g/cm³]</string>
+    <string name="hint_moduloFinura">Módulo de finura</string>
+    <string name="texto_AireIncluido">Aire Incluido</string>
+
+    <!-- array spinner de Resistencia -->
+    <string-array name="spinner_ResistenciaAvanzado">
+        <item>100 \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t [kgf/cm²]</item>
+        <item>150 \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t [kgf/cm²]</item>
+        <item>200 \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t [kgf/cm²]</item>
+        <item>250 \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t [kgf/cm²]</item>
+        <item>300 \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t [kgf/cm²]</item>
+        <item>350 \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t [kgf/cm²]</item>
+        <item>400 \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t [kgf/cm²]</item>
+    </string-array>
+
+    <!-- array spinner de Grava -->
+    <string-array name="spinner_GravaAvanzado">
+        <item>9.5 \t\t\t\t\t\t (3/8\")</item>
+        <item>12.5 \t\t\t\t\t\t (1/2\")</item>
+        <item>19 \t\t\t\t\t\t (3/4\")</item>
+        <item>25 \t\t\t\t\t\t (1\")</item>
+        <item>38 \t\t\t\t\t\t (1 1/2\")</item>
+        <item>50 \t\t\t\t\t\t (2\")</item>
+        <item>75 \t\t\t\t\t\t (3\")</item>
+        <item>150 \t\t\t\t\t\t (4\")</item>
+    </string-array>
+
+    <!-- activity_resultado_avanzado -->
+    <string name="label_ActionBar_ResultadoAvanzado">Avanzado</string>
+    <string name="texto_tabla1">Proporcionamiento para 1 [m³]</string>
+    <string name="texto_tabla4">Proporcionamiento para \"n\" [m³]</string>
+    <string name="hint_nm3">[m³]</string>
+    <string name="texto_tabla6">Proporcionamiento para \"n\" sacos</string>
+    <string name="hint_sacos"> # Sacos </string>
+    <string name="boton_regresar">Regresar</string>
+
+    <!-- activity tabla revenimiento -->
+    <string name="label_actionBar_tablaRevenimiento">Revenimiento</string>
+
+    <!-- activity tabla revenimiento -->
+    <string name="label_actionBar_creditos">Créditos</string>
+    <string name="text_ingenieroJorge">Ing. Jorge Benítez</string>
+    <string name="text_ingenieroManuel">Ing. Manuel Juárez</string>
+</resources>

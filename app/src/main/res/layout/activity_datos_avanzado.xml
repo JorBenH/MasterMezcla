@@ -1,0 +1,628 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="c.apps.machete.mastermezcla.DatosAvanzado">
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_datosAvanzado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:minHeight="?attr/actionBarSize">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="55sp"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/back_button"
+                    style="@android:style/Widget.Material.ImageButton"
+                    android:layout_width="70sp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:foreground="?attr/selectableItemBackground"
+                    app:srcCompat="?attr/actionModeCloseDrawable"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10sp"
+                    android:layout_marginTop="12sp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/basic"
+                    android:text="@string/label_ActionBar_DatosAvanzado"
+                    android:textSize="25sp" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_marginTop="55dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:id="@+id/linear_layout">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_margin="5sp"
+                android:fontFamily="@font/basic"
+                android:text="@string/texto_spinnerResistenciaAvanzado"
+                android:textColor="#37474F"
+                android:textSize="19sp"
+                android:textStyle="italic"
+                android:focusable="true"
+                android:focusableInTouchMode="true"/>
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/spinner_ResistenciaAvanzado"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:backgroundTint="@color/colorAccent"
+                android:layout_width="match_parent"
+                android:layout_height="40sp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/revenimiento_TextInputLayout"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/revenimiento"
+                    android:inputType="numberDecimal"
+                    android:hint="@string/hint_Revenimiento"
+                    android:textColorHint="@color/colorAccent">
+
+                </android.support.v7.widget.AppCompatEditText>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/tabla_Revenimiento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                app:cardBackgroundColor="#B0BEC5"
+                app:cardCornerRadius="10sp"
+                app:cardElevation="4sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_marginTop="7dp"
+                        android:layout_marginBottom="7dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tabla_Revenimiento"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="20sp"
+                        android:textStyle="italic"
+                        tools:fontFamily="@font/basic" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/desviacionEstandar_TextInputLayout"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/default_DesviacionEstandar"
+                    android:id="@+id/desviacionEstandar"
+                    android:inputType="numberDecimal"
+                    android:hint="@string/hint_DesviacionE"
+                    android:textColorHint="@color/colorAccent" >
+
+                </android.support.v7.widget.AppCompatEditText>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/densidad_TextInputLayout"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/default_Densidad"
+                    android:id="@+id/densidad"
+                    android:inputType="numberDecimal"
+                    android:hint="@string/hint_Densidad"
+                    android:textColorHint="@color/colorAccent" >
+
+                </android.support.v7.widget.AppCompatEditText>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_marginStart="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:fontFamily="@font/basic"
+                android:text="@string/texto_Normatividad"
+                android:textColor="#37474F"
+                android:textSize="19sp"
+                android:textStyle="italic"
+                android:focusable="true"
+                android:focusableInTouchMode="true"/>
+
+            <android.widget.RadioGroup
+                android:layout_marginStart="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.AppCompatRadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/r1"
+                    android:text="@string/normatividad_RCDF"
+                    android:checked="true"/>
+
+                <android.support.v7.widget.AppCompatRadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/r2"
+                    android:text="@string/normatividad_2004"/>
+
+                <android.support.v7.widget.AppCompatRadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/r3"
+                    android:text="@string/normatividad_1999"/>
+
+                <android.support.v7.widget.AppCompatRadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/r4"
+                    android:text="@string/normatividad_ACI318"/>
+
+            </android.widget.RadioGroup>
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_marginStart="5dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:fontFamily="@font/basic"
+                android:text="@string/texto_Calidad"
+                android:textColor="#37474F"
+                android:textSize="19sp"
+                android:textStyle="italic"
+                android:focusable="true"
+                android:focusableInTouchMode="true"/>
+
+            <android.widget.RadioGroup
+                android:layout_width="match_parent"
+                android:layout_marginStart="5dp"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.AppCompatRadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/r5"
+                    android:text="@string/texto_RadioButtonCalidad1"
+                    android:checked="true"/>
+
+                <android.support.v7.widget.AppCompatRadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/r6"
+                    android:text="@string/texto_RadioButtonCalidad2"/>
+
+            </android.widget.RadioGroup>
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_marginStart="5dp"
+                android:textAlignment="center"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:fontFamily="@font/basic"
+                android:text="@string/detalles_grava"
+                android:textColor="#37474F"
+                android:textSize="20sp"
+                android:textStyle="italic"
+                android:focusable="true"
+                android:focusableInTouchMode="true"/>
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_marginStart="5dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:fontFamily="@font/basic"
+                android:text="@string/texto_tamañoGrava"
+                android:textColor="#37474F"
+                android:textSize="19sp"
+                android:textStyle="italic"
+                android:focusable="true"
+                android:focusableInTouchMode="true"/>
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/spinner_GravaAvanzado"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:backgroundTint="@color/colorAccent"
+                android:layout_width="match_parent"
+                android:layout_height="40sp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/densidadGrava_TextInputLayout"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/densidadGrava"
+                    android:inputType="numberDecimal"
+                    android:hint="@string/hint_DensidadGrava"
+                    android:textColorHint="@color/colorAccent" >
+
+                </android.support.v7.widget.AppCompatEditText>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/absorcionGrava_TextInputLayout"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/absorcionGrava"
+                    android:inputType="numberDecimal"
+                    android:hint="@string/hint_absorcionGrava"
+                    android:textColorHint="@color/colorAccent" >
+
+                </android.support.v7.widget.AppCompatEditText>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/PVSSGrava_TextInputLayout"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/PVSSGrava"
+                    android:inputType="numberDecimal"
+                    android:hint="@string/hint_PVSSGrava"
+                    android:textColorHint="@color/colorAccent" >
+
+                </android.support.v7.widget.AppCompatEditText>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/PVSCGrava_TextInputLayout"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/PVSCGrava"
+                    android:inputType="numberDecimal"
+                    android:hint="@string/hint_PVSCGrava"
+                    android:textColorHint="@color/colorAccent" >
+
+                </android.support.v7.widget.AppCompatEditText>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/humedadObraGrava_TextInputLayout"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/humedadObraGrava"
+                    android:inputType="numberDecimal"
+                    android:hint="@string/hint_humedadObraGrava"
+                    android:textColorHint="@color/colorAccent" >
+
+                </android.support.v7.widget.AppCompatEditText>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="15sp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:fontFamily="@font/basic"
+                android:text="@string/detalles_arena"
+                android:textAlignment="center"
+                android:textColor="#37474F"
+                android:textSize="20sp"
+                android:textStyle="italic" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/densidadArena_TextInputLayout"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/densidadArena"
+                    android:inputType="numberDecimal"
+                    android:hint="@string/hint_DensidadArena"
+                    android:textColorHint="@color/colorAccent" >
+
+                </android.support.v7.widget.AppCompatEditText>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/absorcionArena_TextInputLayout"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/absorcionArena"
+                    android:inputType="numberDecimal"
+                    android:hint="@string/hint_absorcionGrava"
+                    android:textColorHint="@color/colorAccent" >
+
+                </android.support.v7.widget.AppCompatEditText>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/PVSSArena_TextInputLayout"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/PVSSArena"
+                    android:inputType="numberDecimal"
+                    android:hint="@string/hint_PVSSGrava"
+                    android:textColorHint="@color/colorAccent" >
+
+                </android.support.v7.widget.AppCompatEditText>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/PVSCArena_TextInputLayout"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/PVSCArena"
+                    android:inputType="numberDecimal"
+                    android:hint="@string/hint_PVSCGrava"
+                    android:textColorHint="@color/colorAccent" >
+
+                </android.support.v7.widget.AppCompatEditText>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/moduloFinura_TextInputLayout"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/moduloFinura"
+                    android:inputType="numberDecimal"
+                    android:hint="@string/hint_moduloFinura"
+                    android:textColorHint="@color/colorAccent" >
+
+                </android.support.v7.widget.AppCompatEditText>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/humedadObraArena_TextInputLayout"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp">
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/humedadObraArena"
+                    android:inputType="numberDecimal"
+                    android:hint="@string/hint_humedadObraGrava"
+                    android:textColorHint="@color/colorAccent" >
+
+                </android.support.v7.widget.AppCompatEditText>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_marginStart="5dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:fontFamily="@font/basic"
+                android:text="@string/texto_AireIncluido"
+                android:textColor="#37474F"
+                android:textSize="19sp"
+                android:textStyle="italic"
+                android:focusable="true"
+                android:focusableInTouchMode="true"/>
+
+            <android.support.v7.widget.AppCompatCheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/r7"
+                android:text="No"
+                android:checked="false"/>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/calcular_avanzado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                app:cardBackgroundColor="#B0BEC5"
+                app:cardCornerRadius="10sp"
+                app:cardElevation="4sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_marginTop="7dp"
+                        android:layout_marginBottom="7dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/boton_calcular"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="20sp"
+                        android:textStyle="italic"
+                        tools:fontFamily="@font/basic" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/inicio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                app:cardBackgroundColor="#B0BEC5"
+                app:cardCornerRadius="10sp"
+                app:cardElevation="4sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_marginTop="7dp"
+                        android:layout_marginBottom="7dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/boton_inicio"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="20sp"
+                        android:textStyle="italic"
+                        tools:fontFamily="@font/basic" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
